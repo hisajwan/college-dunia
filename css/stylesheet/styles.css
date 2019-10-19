@@ -1,0 +1,221 @@
+@font-face {
+  font-family: DinPro-Black;
+  src: url("../fonts/DINProBlack.ttf");
+}
+
+@font-face {
+  font-family: DinPro-Bold;
+  src: url("../fonts/DINPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: DinPro-Light;
+  src: url("../fonts/DINPro-Light.ttf");
+}
+
+@font-face {
+  font-family: DinPro-Medium;
+  src: url("../fonts/DINPro-Medium.ttf");
+}
+
+* {
+  font-family: DinPro-Medium;
+}
+
+main > header.page-header {
+  font-family: DinPro-Medium;
+  font-size: 18.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container > section.college-cards {
+  /* width: 639px;
+  height: 377px; */
+  min-width: 300px;
+  position: relative;
+  padding: 20px;
+  flex: 1;
+}
+
+.container > section.college-cards > div.card-content {
+  margin-top: 16px;
+  border-radius: 3.8px;
+  overflow: hidden;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  border: solid 0.2px #444444;
+  background-color: #ffffff;
+}
+
+.container > section.college-cards > div.promoted {
+  position: absolute;
+  right: 35px;
+  font-family: DINPro-Light;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.container > section.college-cards > div.promoted > div.clipped {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 52%);
+  background-color: #68a7ff;
+  width: 100px;
+  text-align: right;
+  padding: 5% 10% 5% 5%;
+}
+
+.container > section.college-cards > div.card-content > div.image-section {
+  position: relative;
+}
+
+.container
+  > section.college-cards
+  > div.card-content
+  > div.image-section
+  > div.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  top: 0;
+  opacity: 0.7;
+}
+
+.image-data {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "empty score"
+    "distance ranking";
+  color: #ffffff;
+}
+
+.image-data > div:first-child {
+  grid-area: "score";
+}
+.image-data > div:nth-child(2) {
+  grid-area: "distance";
+}
+.image-data > div:nth-child(3) {
+  grid-area: "distance";
+}
+.image-data > div:last-child {
+  grid-area: "ranking";
+}
+
+.image-data > div:nth-child(2) > div,
+.image-data > div:nth-child(4) > span {
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.font-xl {
+  font-size: 16px;
+}
+
+.font-l {
+  font-size: 14px;
+}
+
+.font-m {
+  font-size: 12px;
+}
+
+.font-s {
+  font-size: 10px;
+}
+
+.font-xs {
+  font-size: 8px;
+}
+
+.score-box {
+  width: max-content;
+  border-radius: 3.8px;
+  background-color: #f5a626;
+  font-family: DinPro-Medium;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 1% 2%;
+}
+
+.distance-box > div {
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.distance-box > div > span {
+  border-radius: 16.5px;
+  background-color: #ffffff;
+  font-family: DINPro;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+  padding: 2% 3%;
+  width: max-content;
+}
+
+.distance-box > div > span:first-child {
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 523px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 1199px) {
+}
