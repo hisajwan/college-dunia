@@ -12,7 +12,7 @@ main > header.page-header {
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -30,7 +30,7 @@ main > header.page-header {
   border-radius: 3.8px;
   overflow: hidden;
   box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
-  border: solid 0.2px #444444;
+  border: solid 0.5px #44444430;
   background-color: #ffffff;
 }
 
@@ -87,11 +87,15 @@ main > header.page-header {
   color: #ffffff;
 }
 
+.image-data > div {
+  padding: 5px;
+}
+
 .image-data > div:first-child {
-  grid-area: "score";
+  grid-area: "empty";
 }
 .image-data > div:nth-child(2) {
-  grid-area: "distance";
+  grid-area: "score";
 }
 .image-data > div:nth-child(3) {
   grid-area: "distance";
@@ -155,6 +159,7 @@ main > header.page-header {
 .college-detail {
   display: grid;
   color: #444444;
+  font-size: 12px;
 }
 
 .college-detail > div {
@@ -178,8 +183,8 @@ div.offer > div {
   border-top-right-radius: 50px;
 }
 
-.rating {
-  margin-left: 10px;
+.college-name {
+  margin-right: 10px;
 }
 
 .old-price > div {
@@ -209,4 +214,8 @@ div.offer > div {
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+
+.fees {
+  align-items: flex-end;
 }

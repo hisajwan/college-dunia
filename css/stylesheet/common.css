@@ -10,8 +10,16 @@
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-start {
@@ -20,6 +28,10 @@
 
 .align-start {
   align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .align-end {

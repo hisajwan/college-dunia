@@ -1,3 +1,56 @@
+@media screen and (max-width: 620px) {
+  .image-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .score-box,
+  .distance-box > div,
+  .rank-box > span {
+    margin: 5px 0 0 10px !important;
+  }
+
+  .image-data > div {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .fees {
+    align-items: flex-start;
+  }
+
+  .free {
+    padding: 4px 15px;
+  }
+}
+
+@media only screen and (min-width: 813px) and (max-width: 1137px) {
+  .image-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-data > div:first-child {
+    display: none;
+  }
+  .score-box,
+  .distance-box > div,
+  .rank-box > span {
+    margin: 1% 0 0 10px !important;
+  }
+
+  .image-data > div {
+    justify-content: flex-start;
+  }
+
+  .fees {
+    align-items: flex-start;
+  }
+
+  .free {
+    padding: 4px 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container > section.college-cards {
     min-width: 300px;
