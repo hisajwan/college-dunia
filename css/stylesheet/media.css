@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+  .container > section.college-cards {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 1199px) {
+  .container > section.college-cards {
+    min-width: 350px;
+  }
+}

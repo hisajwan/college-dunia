@@ -1,27 +1,3 @@
-@font-face {
-  font-family: DinPro-Black;
-  src: url("../fonts/DINProBlack.ttf");
-}
-
-@font-face {
-  font-family: DinPro-Bold;
-  src: url("../fonts/DINPro-Bold.ttf");
-}
-
-@font-face {
-  font-family: DinPro-Light;
-  src: url("../fonts/DINPro-Light.ttf");
-}
-
-@font-face {
-  font-family: DinPro-Medium;
-  src: url("../fonts/DINPro-Medium.ttf");
-}
-
-* {
-  font-family: DinPro-Medium;
-}
-
 main > header.page-header {
   font-family: DinPro-Medium;
   font-size: 18.5px;
@@ -36,7 +12,7 @@ main > header.page-header {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -124,50 +100,14 @@ main > header.page-header {
   grid-area: "ranking";
 }
 
-.image-data > div:nth-child(2) > div,
-.image-data > div:nth-child(4) > span {
+.image-data > div:nth-child(2) > div {
   margin-right: 15px;
   margin-top: 30px;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.align-start {
-  align-items: flex-start;
-}
-
-.align-end {
-  align-items: flex-end;
-}
-
-.font-xl {
-  font-size: 16px;
-}
-
-.font-l {
-  font-size: 14px;
-}
-
-.font-m {
-  font-size: 12px;
-}
-
-.font-s {
-  font-size: 10px;
-}
-
-.font-xs {
-  font-size: 8px;
+.image-data > div:nth-child(4) > span {
+  margin-right: 15px;
+  margin-bottom: 30px;
 }
 
 .score-box {
@@ -187,8 +127,9 @@ main > header.page-header {
 }
 
 .distance-box > div {
-  margin-right: 15px;
-  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .distance-box > div > span {
@@ -211,11 +152,61 @@ main > header.page-header {
   margin-right: 5%;
 }
 
-@media screen and (max-width: 523px) {
+.college-detail {
+  display: grid;
+  color: #444444;
 }
-@media screen and (max-width: 767px) {
+
+.college-detail > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 15px;
 }
-@media screen and (max-width: 991px) {
+
+.college-detail > div:first-child {
+  padding-top: 15px;
 }
-@media screen and (max-width: 1199px) {
+
+.college-detail > div:last-child {
+  padding-left: 0px;
+  padding-bottom: 15px;
+}
+
+div.offer > div {
+  padding: 8px 16px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.rating {
+  margin-left: 10px;
+}
+
+.old-price > div {
+  color: #ffffff;
+  margin: 0 0 0 10px;
+  background: #dd1c26;
+  clip-path: polygon(19% 0, 100% 0, 100% 100%, 19% 100%, 0 50%);
+}
+
+.old-price > div > li {
+  position: relative;
+  padding: 0 7px;
+}
+
+.old-price > div > li > span {
+  position: absolute;
+  left: 15px;
+}
+
+.deal {
+  clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0 100%, 0 0);
+  background: #4bb89e;
+  width: 45px;
+  color: white;
+  padding: 5px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
